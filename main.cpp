@@ -26,10 +26,32 @@ using namespace std;
 // Expected output for n = 15:
 // 1 2 Fizz 4 Buzz Fizz 49 8 Fizz Buzz 11 Fizz 13 169 FizzBuzz
 
-void fizzBuzz(int n) {
-    // TODO
+void fizzBuzz(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 3 == 0 & i % 5 == 0)
+        {
+            cout << "fizzBuzz";
+        }
+        else if (i % 5 == 0)
+        {
+            cout << "buzz";
+        }
+        else if (i % 3 == 0)
+        {
+            cout << "fizz";
+        }
+        else if (i % 7 == 0)
+        {
+            cout << i * i;
+        }
+        else
+        {
+            cout << i;
+        }
+    }
 }
-
 // -------------------------------------------------------
 // TASK 2: Array reversal
 // -------------------------------------------------------
@@ -41,7 +63,8 @@ void fizzBuzz(int n) {
 // before: 10 20 30 40 50
 // after:  50 40 30 20 10
 
-void reverseArray(int arr[], int size) {
+void reverseArray(int arr[], int size)
+{
     // TODO
 }
 
@@ -65,7 +88,8 @@ void reverseArray(int arr[], int size) {
 // Row 3 sum: 42
 // Highest sum: row 3 with 42
 
-int rowSum(int arr[][4], int row) {
+int rowSum(int arr[][4], int row)
+{
     // TODO
 }
 
@@ -82,7 +106,8 @@ int rowSum(int arr[][4], int row) {
 //   string word;
 //   while (inputFile >> word) { ... }
 
-int countWords(string filename) {
+int countWords(string filename)
+{
     // TODO
 }
 
@@ -98,7 +123,8 @@ int countWords(string filename) {
 //
 // Do NOT use any math libraries.
 
-void inspectNumber(int n, bool &isEven, int &absVal, int &digits) {
+void inspectNumber(int n, bool &isEven, int &absVal, int &digits)
+{
     // TODO
 }
 
@@ -119,11 +145,13 @@ void inspectNumber(int n, bool &isEven, int &absVal, int &digits) {
 // Main diagonal sum: 34   (1 + 6 + 11 + 16)
 // Anti diagonal sum: 34   (4 + 7 + 10 + 13)
 
-int mainDiagonalSum(int arr[][4]) {
+int mainDiagonalSum(int arr[][4])
+{
     // TODO
 }
 
-int antiDiagonalSum(int arr[][4]) {
+int antiDiagonalSum(int arr[][4])
+{
     // TODO
 }
 
@@ -142,7 +170,8 @@ int antiDiagonalSum(int arr[][4]) {
 // Handle the edge case where the user enters -1 immediately
 // (print "No numbers entered." and exit cleanly).
 
-void runningStats() {
+void runningStats()
+{
     // TODO
 }
 
@@ -150,11 +179,12 @@ void runningStats() {
 // main — uncomment each task as you complete it
 // -------------------------------------------------------
 
-int main() {
+int main()
+{
 
-    // --- Task 1 ---
-    // cout << "--- Task 1: FizzBuzz ---" << endl;
-    // fizzBuzz(15);
+    //--- Task 1 ---
+    cout << "--- Task 1: FizzBuzz ---" << endl;
+    fizzBuzz(15);
 
     // --- Task 2 ---
     // cout << "\n--- Task 2: Array reversal ---" << endl;
